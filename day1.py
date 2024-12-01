@@ -58,10 +58,6 @@ def calculer_similitude(donnees_initiales):
 # avec suppression des caractères parasites avant et après les éléments
 donnees_initiales = [item.split() for item in charger_donnees()]
 
-# Récupération des listes gauche et droite avec passage des valeurs en numérique
-liste_gauche = [int(item[0]) for item in donnees_initiales]
-liste_droite = [int(item[1]) for item in donnees_initiales]
-
 # Affichage des résultats
 print("Partie 1 :", calculer_ecarts_listes(donnees_initiales))
 print("Partie 2 :", calculer_similitude(donnees_initiales))
